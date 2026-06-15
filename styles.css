@@ -1,0 +1,143 @@
+/* General Page */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Quiz Card */
+.card {
+  background: #ffffffcc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #ffeaa7;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+#options button:hover {
+  background: #fab1a0;
+}
+
+#options button.selected {
+  background: #55efc4;
+  color: #fff;
+}
+
+#submit-btn {
+  background: #ff7675;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+#submit-btn:hover {
+  background: #d63031;
+}
+
+#timer {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+/* Celebration Screen */
+#celebration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in;
+}
+
+#celebration h1 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#celebration h2 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#celebration button {
+  background: #ff7675;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#celebration button:hover {
+  background: #d63031;
+}
+
+/* Clouds Animation */
+.clouds {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 200px;
+  background-size: 150px;
+  animation: moveClouds 60s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes moveClouds {
+  from { background-position-x: 0; }
+  to { background-position-x: -2000px; }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+
+
+
+
+
+
+

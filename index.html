@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Quiz Container -->
+  <div id="quiz-container" class="card">
+    <h2 id="question">Loading question...</h2>
+    <div id="options"></div>
+    <button id="submit-btn">Submit</button>
+    <p id="timer">Time left: 15s</p>
+  </div>
+
+  <!-- Celebration screen -->
+  <div id="celebration" class="hidden">
+    <h1>🎉 Woohoo! You completed the quiz! 🎉</h1>
+    <h2 id="score-text"></h2>
+    <div class="clouds"></div>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
